@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio de Paulo Vitor, estudante de Desenvolvimento Full Stack.">
+  <title>Paulo Vitor | Desenvolvedor Full Stack</title>
+
+  <!-- Fonte moderna do Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- CSS do portfólio -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Cabeçalho e menu de navegação -->
+  <header class="cabecalho">
+    <div class="container cabecalho-conteudo">
+      <a href="#inicio" class="logo">Paulo<span>Vitor</span></a>
+
+      <nav class="navegacao" id="navegacao" aria-label="Navegação principal">
+        <ul class="menu">
+          <li><a href="#inicio" class="link-menu">Início</a></li>
+          <li><a href="#sobre" class="link-menu">Sobre</a></li>
+          <li><a href="#habilidades" class="link-menu">Habilidades</a></li>
+          <li><a href="#formacao" class="link-menu">Formação</a></li>
+          <li><a href="#projetos" class="link-menu">Projetos</a></li>
+          <li><a href="#contato" class="link-menu">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="cabecalho-acoes">
+        <button id="botao-tema" class="botao-tema" aria-label="Alternar entre modo claro e escuro">
+          <i class="bi bi-moon-stars" aria-hidden="true"></i>
+        </button>
+
+        <button id="botao-menu" class="botao-menu" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="navegacao">
+          <i class="bi bi-list" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Seção principal -->
+    <section id="inicio" class="secao hero">
+      <div class="container hero-conteudo">
+        <div class="hero-texto">
+          <p class="hero-saudacao">Olá, eu sou</p>
+          <h1 class="hero-nome">Paulo Vitor</h1>
+          <h2 class="hero-cargo">
+            <span id="texto-digitado"></span>
+            <span class="cursor" aria-hidden="true">|</span>
+          </h2>
+
+          <p class="hero-descricao">
+            Estudante de Desenvolvimento Full Stack, construindo uma base sólida em programação,
+            tecnologia e criação de projetos.
+          </p>
+
+          <div class="hero-botoes">
+            <a href="curriculo.pdf" download class="botao botao-primario">
+              <i class="bi bi-download" aria-hidden="true"></i>
+              Baixar meu CV
+            </a>
+
+            <a href="#projetos" class="botao botao-secundario">
+              Ver projetos
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="circulo-visual">
+            <i class="bi bi-code-slash"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre mim -->
+    <section id="sobre" class="secao">
+      <div class="container">
+        <h2 class="titulo-secao revelar">Sobre mim</h2>
+
+        <div class="sobre-grid">
+          <article class="card sobre-card revelar">
+            <h3><i class="bi bi-person-badge" aria-hidden="true"></i> Apresentação</h3>
+            <p>
+              Sou estudante do 1º ano do Ensino Médio integrado ao Técnico em Informática para Internet,
+              na SESC Escola, em parceria com o SENAC.
+            </p>
+            <p>
+              Atualmente, estou desenvolvendo meus conhecimentos em programação, com foco inicial em
+              desenvolvimento Front-end. Minha formação seguirá uma trilha de aprendizado que inclui
+              Back-end no 2º ano e desenvolvimento Mobile no 3º ano.
+            </p>
+            <p>
+              Tenho interesse em tecnologia, programação e desenvolvimento de projetos. Busco aprimorar
+              minhas habilidades, adquirir experiência e construir uma base sólida para me tornar um
+              Desenvolvedor Full Stack.
+            </p>
+          </article>
+
+          <article class="card objetivo-card revelar">
+            <h3><i class="bi bi-bullseye" aria-hidden="true"></i> Objetivo pessoal</h3>
+            <p>
+              Aprender novas tecnologias, criar projetos e evoluir constantemente na área de
+              desenvolvimento de software.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="habilidades" class="secao secao-alternativa">
+      <div class="container">
+        <h2 class="titulo-secao revelar">Habilidades</h2>
+        <p class="descricao-secao revelar">Tecnologias e conhecimentos que estou estudando e praticando.</p>
+
+        <ul class="lista-habilidades">
+          <li class="habilidade revelar"><i class="bi bi-filetype-html" aria-hidden="true"></i> HTML5</li>
+          <li class="habilidade revelar"><i class="bi bi-filetype-css" aria-hidden="true"></i> CSS3</li>
+          <li class="habilidade revelar"><i class="bi bi-filetype-js" aria-hidden="true"></i> JavaScript</li>
+          <li class="habilidade revelar"><i class="bi bi-diagram-3" aria-hidden="true"></i> Lógica de Programação</li>
+          <li class="habilidade revelar"><i class="bi bi-braces" aria-hidden="true"></i> Algoritmos</li>
+          <li class="habilidade revelar"><i class="bi bi-git" aria-hidden="true"></i> Git</li>
+          <li class="habilidade revelar"><i class="bi bi-github" aria-hidden="true"></i> GitHub</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Formação e roadmap -->
+    <section id="formacao" class="secao">
+      <div class="container">
+        <h2 class="titulo-secao revelar">Formação</h2>
+
+        <article class="card formacao-card revelar">
+          <div class="formacao-cabecalho">
+            <i class="bi bi-mortarboard" aria-hidden="true"></i>
+            <div>
+              <h3>Ensino Médio integrado ao Técnico em Informática para Internet</h3>
+              <p>SESC Escola, em parceria com o SENAC</p>
+            </div>
+          </div>
+
+          <p class="formacao-texto">
+            Minha trilha de aprendizado está organizada em três etapas ao longo do curso.
+          </p>
+
+          <!-- Roadmap / linha do tempo -->
+          <ol class="roadmap">
+            <li class="etapa etapa-atual revelar">
+              <div class="etapa-icone">
+                <i class="bi bi-window-desktop" aria-hidden="true"></i>
+              </div>
+              <div class="etapa-conteudo">
+                <span class="etapa-status">Etapa atual</span>
+                <h4>1º ano — Front-end</h4>
+                <p>Estudo de HTML, CSS, JavaScript, lógica de programação e algoritmos.</p>
+              </div>
+            </li>
+
+            <li class="etapa revelar">
+              <div class="etapa-icone">
+                <i class="bi bi-server" aria-hidden="true"></i>
+              </div>
+              <div class="etapa-conteudo">
+                <span class="etapa-status">Próxima etapa</span>
+                <h4>2º ano — Back-end</h4>
+                <p>Desenvolvimento da parte lógica e do servidor das aplicações.</p>
+              </div>
+            </li>
+
+            <li class="etapa revelar">
+              <div class="etapa-icone">
+                <i class="bi bi-phone" aria-hidden="true"></i>
+              </div>
+              <div class="etapa-conteudo">
+                <span class="etapa-status">Etapa futura</span>
+                <h4>3º ano — Mobile</h4>
+                <p>Desenvolvimento de aplicativos para dispositivos móveis.</p>
+              </div>
+            </li>
+          </ol>
+        </article>
+      </div>
+    </section>
+
+    <!-- Projetos e repositórios -->
+    <section id="projetos" class="secao secao-alternativa">
+      <div class="container">
+        <h2 class="titulo-secao revelar">Meu portfólio e estudos</h2>
+
+        <!-- Projetos de destaque -->
+        <h3 class="subtitulo-secao revelar">Projetos de destaque</h3>
+
+        <div class="grade-projetos">
+          <article class="card projeto-card revelar">
+            <div class="projeto-preview">
+              <i class="bi bi-music-note-beamed" aria-hidden="true"></i>
+            </div>
+
+            <div class="projeto-conteudo">
+              <h4>Compasso musical</h4>
+              <p>Projeto desenvolvido para praticar estrutura e estilização de páginas com HTML.</p>
+
+              <div class="tags">
+                <span class="tag">HTML</span>
+              </div>
+
+              <div class="projeto-botoes">
+                <a href="https://patinho-fofo-paulo.github.io/compasso-musical/" target="_blank" rel="noopener noreferrer" class="botao botao-primario">
+                  <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>
+                  Site
+                </a>
+
+                <a href="https://github.com/patinho-fofo-paulo/compasso-musical.git" target="_blank" rel="noopener noreferrer" class="botao botao-secundario">
+                  <i class="bi bi-github" aria-hidden="true"></i>
+                  Repositório
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card projeto-card revelar">
+            <div class="projeto-preview">
+              <i class="bi bi-trophy" aria-hidden="true"></i>
+            </div>
+
+            <div class="projeto-conteudo">
+              <h4>Copa do mundo</h4>
+              <p>Projeto desenvolvido para praticar lógica e interatividade com JavaScript.</p>
+
+              <div class="tags">
+                <span class="tag">JavaScript</span>
+              </div>
+
+              <div class="projeto-botoes">
+                <a href="https://patinho-fofo-paulo.github.io/copa-do-mundo/" target="_blank" rel="noopener noreferrer" class="botao botao-primario">
+                  <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>
+                  Site
+                </a>
+
+                <a href="https://github.com/patinho-fofo-paulo/copa-do-mundo.git" target="_blank" rel="noopener noreferrer" class="botao botao-secundario">
+                  <i class="bi bi-github" aria-hidden="true"></i>
+                  Repositório
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Repositórios de estudo -->
+        <h3 class="subtitulo-secao revelar">Repositórios de estudo</h3>
+
+        <div class="grade-estudos">
+          <article class="card estudo-card revelar">
+            <i class="bi bi-filetype-html" aria-hidden="true"></i>
+            <h4>Trilha de HTML e CSS</h4>
+            <p>Exercícios, atividades e anotações sobre estrutura e estilização de páginas.</p>
+
+            <div class="tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+            </div>
+
+            <a href="https://github.com/patinho-fofo-paulo/html.git" target="_blank" rel="noopener noreferrer" class="link-github">
+              Acessar GitHub <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+            </a>
+          </article>
+
+          <article class="card estudo-card revelar">
+            <i class="bi bi-filetype-js" aria-hidden="true"></i>
+            <h4>Trilha de JavaScript</h4>
+            <p>Estudos e práticas de programação, interatividade e lógica com JavaScript.</p>
+
+            <div class="tags">
+              <span class="tag">JavaScript</span>
+            </div>
+
+            <a href="https://github.com/patinho-fofo-paulo/javascript.git" target="_blank" rel="noopener noreferrer" class="link-github">
+              Acessar GitHub <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+            </a>
+          </article>
+
+          <article class="card estudo-card revelar">
+            <i class="bi bi-braces" aria-hidden="true"></i>
+            <h4>Lógica de Programação e Algoritmos</h4>
+            <p>Exercícios e anotações de lógica de programação utilizando Portugol.</p>
+
+            <div class="tags">
+              <span class="tag">Portugol</span>
+              <span class="tag">Algoritmos</span>
+            </div>
+
+            <a href="https://github.com/patinho-fofo-paulo/algoritmos.git" target="_blank" rel="noopener noreferrer" class="link-github">
+              Acessar GitHub <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="secao">
+      <div class="container">
+        <h2 class="titulo-secao revelar">Vamos conversar?</h2>
+        <p class="descricao-secao revelar">Conecte-se comigo para trocar ideias sobre tecnologia e desenvolvimento.</p>
+
+        <div class="grade-contato">
+          <a href="mailto:paulovitor.dev.adm@gmail.com" class="card contato-card contato-email revelar">
+            <i class="bi bi-envelope" aria-hidden="true"></i>
+            <div>
+              <h3>E-mail</h3>
+              <p>paulovitor.dev.adm@gmail.com</p>
+            </div>
+          </a>
+
+          <a href="https://github.com/patinho-fofo-paulo" target="_blank" rel="noopener noreferrer" class="card contato-card contato-github revelar">
+            <i class="bi bi-github" aria-hidden="true"></i>
+            <div>
+              <h3>GitHub</h3>
+              <p>patinho-fofo-paulo</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Botão flutuante para voltar ao topo -->
+  <button id="botao-topo" class="botao-topo" aria-label="Voltar ao topo da página">
+    <i class="bi bi-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <!-- Rodapé -->
+  <footer class="rodape">
+    <div class="container rodape-conteudo">
+      <p>Desenvolvido por Paulo Vitor</p>
+      <p>&copy; <span id="ano-atual"></span> Paulo Vitor. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js" defer></script>
+</body>
+</html>
