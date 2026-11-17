@@ -486,12 +486,34 @@ button:focus-visible {
 }
 
 .projeto-preview {
+  position: relative;
   height: 180px;
   display: grid;
   place-items: center;
   font-size: 3.5rem;
   color: white;
   background: linear-gradient(135deg, var(--cor-destaque), #22d3ee);
+}
+
+.projeto-card--destaque {
+  border-color: var(--cor-destaque);
+  box-shadow: 0 14px 34px var(--cor-sombra);
+}
+
+.selo-destaque {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  background-color: #ffffff;
+  color: #4338ca;
+  font-size: 0.72rem;
+  font-weight: 800;
+  box-shadow: 0 6px 16px rgba(15, 23, 42, 0.18);
 }
 
 .projeto-conteudo {
